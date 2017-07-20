@@ -43,7 +43,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin-top: -5px; background-color: #fff;">
                     <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">ACTLOCAL</a>
@@ -73,11 +73,11 @@
         <div class="container" id="signup">
             <div class="row">
                 <div class="col-sm-7">
-                    <div class="header-content">
+                    <div class="header-content" style="padding-top: 150px;">
                         <div class="header-content-inner">
                             
                             <h3>Coming in the fall</h3>
-                            <img src="img/actlocal2017.png" style="max-width: 625px;" class="img-responsive">
+                            <img src="img/actlocal2017.png" class="img-responsive title">
                             <h3 style="padding-bottom: 20px;">We're uniting leaders across the country to build coalitions, skills, and local power.</h3>
 
 
@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 <div class="col-sm-5">
-                   <div class="header-content">
+                   <div class="header-content" style="padding-top: 50px; padding-bottom: 50px;">
                         <div class="header-content-inner header-content-logos">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
                                     <img src="img/dailykos.png" alt="" width=250 style="padding: 10px;"><img src="img/wallofus.png" alt="" width=200 style="padding: 10px;"><br><img src="img/cap.png" alt="" width=250 style="padding: 10px;"><img src="img/agn.png" alt="" width=150 style="padding: 10px;"><br><img src="img/fightfor15.png" alt="" width=150 style="padding: 10px;"><img src="img/logo.png" alt="" width=250 style="padding: 10px;"><br><br>
@@ -111,18 +111,19 @@
                     <div class="container-fluid">
                         <div class="row">
                            <h2>There has never been a more important time to organize locally.</h2><br>
-                        <p class="text-muted">ActLocal is a network of local leaders from new and legacy organizations committed to advancing a just, equitable and free America using local power. </p>
-                        <p class="text-muted">In the Fall of 2017, we will be holding ActLocal summits in cities and towns across the country to provide coordination tools, training, networking, and resources to our local leaders and heroes.  Each invitation-only summit will feature dynamic keynotes, skills-based volunteer matching, and master workshops. Participants will have the opportunity to elevate their campaigns, get targeted help, and network with peers and thought leaders at the event and in local follow up dinners. There are a number of ways that you can get involved. We are currently looking to connect with:</p>
+                        <p class="text-muted">ActLocal is a network of local leaders from new and established organizations committed to advancing a just, equitable and free America using local power.</p>
+                        <p class="text-muted">In the fall of 2017, we will be holding ActLocal summits in cities and towns across the country to provide coordination tools, training, networking, and resources to our local leaders and heroes. Each invitation-only summit will feature dynamic keynotes, and master workshops. Participants will have the opportunity to elevate their campaigns, get targeted help, and network with peers and thought leaders at the event and in local follow up dinners. There are a number of ways that you can get involved. We are currently looking to connect with:</p>
 
 
                         <ul class="text-muted">
                         <li>Leaders of progressive national and local non-profit groups;</li>
                         <li>Organizers of progressive local chapters or groups;</li>
+                        <li>Community leaders and local influencers;</li>
                         <li>Potential speakers, training providers, volunteers, and local partners;</li>
                         <li>People with access to space who are willing to host.</li>
                         </ul>
                         </p>
-                        <p class="text-muted">The goal of our Fall ActLocal events is to build local progressive power by:
+                        <p class="text-muted">The goal of our fall ActLocal events is to build local progressive power by:
                         <ul class="text-muted">
                         <li>Sustaining, supporting, and connecting new and legacy progressive leaders;</li>
                         <li>Identifying near-term campaigns that can be fought and won at a local level;</li>
@@ -146,15 +147,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only">First name *</label>
-                                            <input class="form-control" placeholder="First name *" name="first" id="first">
+                                            <input class="form-control" placeholder="First name *" name="first" id="first" required>
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only">Last name *</label>
-                                            <input class="form-control" placeholder="Last name *" name="lastname" id="lastname">
+                                            <input class="form-control" placeholder="Last name *" name="lastname" id="lastname" required>
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only">Email *</label>
-                                            <input class="form-control" placeholder="Email *" name="email" id="last">
+                                            <input class="form-control" placeholder="Email *" name="email" id="email">
                                         </div>
                                         <div class="form-group">
                                             <label class="sr-only">Organization</label>
@@ -167,10 +168,10 @@
                                         </div>
                                         <div class="form-group">
                                             <label>How would you like to get involved? *</label>
-                                            <select class="form-control" name="involved" id="involved">
-                                                <option id="partner" name="partner" value="partner">I represent an organization who would like to partner</option>
-                                                <option id="leader" name="leader" value="leader">I am a local leader/organizer and would like to host or attend</option>
-                                                <option id="volunteer" name="volunteer" value="volunteer">I would like to volunteer my time to help make these events happen</option>
+                                            <select class="form-control" name="involved" id="involved" required>
+                                                <option id="partner" name="partner" value="partner">I would like to partner</option>
+                                                <option id="leader" name="leader" value="leader">I want to host or attend</option>
+                                                <option id="volunteer" name="volunteer" value="volunteer">I would like to volunteer</option>
                                             </select>
                                         </div>
                                         
@@ -181,18 +182,11 @@
 
                                    
                                   <!-- Customise the Thankyou Message People See when they submit the form: -->
-                                  <div style="display:none;" id="thankyou_leader">
-                                    <h3><em>Thanks</em> for contacting us!
-                                      We will get back to you soon!</h3>
+                                  <div style="display:none;" id="thankyou">
+                                    <h3>Thank you for your interest in getting involved, we will follow up by email shortly.</h3>
                                   </div>
 
-                                  <div style="display:none;" id="thankyou_partner">
-                                    <h3><em>Thanks</em> for wanting to partner</h3>
-                                  </div>
-
-                                  <div style="display:none;" id="thankyou_volunteer">
-                                    <h3>Thank you for offering your valuable time. </h3>
-                                  </div>
+                                  
 
                                   <!-- Submit the Form to Google Using "AJAX" -->
                                   <script data-cfasync="false" type="text/javascript"

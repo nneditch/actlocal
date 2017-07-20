@@ -85,7 +85,14 @@ li {
   font-size: 24px;
   color: #333;
   border: none;
+  background-color: none;
   padding: 10px;
+  margin-top: -5;
+}
+.navbar-default .navbar-header .navbar-toggle:hover {
+  
+  background-color: none;
+
 }
 
 .navbar-default .nav > li > a {
@@ -97,7 +104,7 @@ li {
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
-  color: #fff;
+  color: #333;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -172,7 +179,6 @@ header {
 
 header .header-content {
   text-align: center;
-  padding: 150px 0 150px;
   position: relative;
   max-width: 800px;
 }
@@ -197,6 +203,9 @@ header .header-content .header-content-inner .list-badges {
 header .header-content .header-content-inner .list-badges img {
   height: 50px;
   margin-bottom: 25px;
+}
+header .header-content .header-content-inner .title img {
+  width: 150px;
 }
 header .device-container {
   max-width: 300px;
@@ -234,6 +243,7 @@ header .device-container .screen img {
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
+  
 }
 section {
   padding: 100px 0;
@@ -318,7 +328,6 @@ section.cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/womensmarch.jpg');
   padding: 130px 0;
 }
 section.cta-plain {
