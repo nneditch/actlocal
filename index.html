@@ -166,14 +166,17 @@
                                             <label class="sr-only">Zip Code</label>
                                             <input class="form-control" placeholder="Zip Code" name="zipcode" id="zipcode">
                                         </div>
-                                        <div class="form-group">
+                                            <div class="form-group">
                                             <label>How would you like to get involved? *</label>
                                             <select class="form-control" name="involved" id="involved" required>
                                                 <option id="partner" name="partner" value="partner">I would like to partner</option>
-                                                <option id="leader" name="leader" value="leader">I want to host or attend</option>
+                                                <option id="leader" name="leader" value="leader">I want to host an event</option>
+                                                <option id="leader" name="leader" value="leader">I want to attend an event</option>
                                                 <option id="volunteer" name="volunteer" value="volunteer">I would like to volunteer</option>
                                             </select>
                                         </div>
+                                        
+                                        
                                         
                                        
                                         <button class="button-success btn btn-outline-blk btn-xl page-scroll">Submit</button>
@@ -182,8 +185,15 @@
 
                                    
                                   <!-- Customise the Thankyou Message People See when they submit the form: -->
-                                  <div style="display:none;" id="thankyou">
-                                    <h3>Thank you for your interest in getting involved, we will follow up by email shortly.</h3>
+                                  <div style="display:none;" id="thankyou_leader">
+                                    <h3>Thank you for your interest in getting involved.</h3> <p>Please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLScxu8rgaw36H9P4MW9LqU39cy2krrCGhqR5wF3kUxMklU0Egw/viewform?usp=sf_link">this short survey</a> so that we can best partner with you.</p>
+                                  </div>
+                                  <div style="display:none;" id="thankyou_partner">
+                                    <h3>Thank you for your interest in getting involved.</h3> <p>Please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBN-v8OucPAiU1jcVHC0RfsIqxVJYzo8BfoAW3B81QsrMWLg/viewform?usp=sf_link">this short survey</a> so that we can best partner with you.</p>
+                                  </div>
+                                  
+                                  <div style="display:none;" id="thankyou_volunteer">
+                                    <h3>Thank you for your interest in getting involved.</h3> <p>Please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlzcNtLRrR56dDmrybGlm_nPJSSMCnxbNYJQwgE214KhfY6g/viewform?usp=sf_link">this short survey</a> so that we can best partner with you.</p>
                                   </div>
 
                                   
@@ -206,7 +216,7 @@
         <div class="cta-content">
             <div class="container">
                 <h3>Our Partners: </h3>
-                <img src="img/logos/Daily_Kos.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/WoU.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/cap.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/ff15.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/agn.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/18mr.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/assemble.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/peoplessupper.png" alt="" width=150 style="padding: 10px;"><img src="img/logos/demlabs.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/ALC_logo.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/itstartstoday.png" alt="" width=175 style="padding: 10px;"><img src="img/logos/cpd.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/PresenteLogo.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/ATNColorLogo.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/democracyengine.png" alt="" width=225 style="padding: 10px;"><img src="img/logos/lav.png" alt="" width=350 style="padding: 10px;"><img src="img/logos/tww.png" alt="" width=200 style="padding: 10px;">
+                <img src="img/logos/Daily_Kos.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/WoU.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/cap.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/ff15.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/agn.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/18mr.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/assemble.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/peoplessupper.png" alt="" width=150 style="padding: 10px;"><img src="img/logos/demlabs.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/ALC_logo.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/itstartstoday.png" alt="" width=175 style="padding: 10px;"><img src="img/logos/cpd.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/PresenteLogo.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/ATNColorLogo.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/affinity_logo_vertical.png" alt="" width=150 style="padding: 10px;"><img src="img/logos/democracyengine.png" alt="" width=225 style="padding: 10px;"><img src="img/logos/tww.png" alt="" width=200 style="padding: 10px;"><img src="img/logos/rebootdemocracy.png" alt="" width=300 style="padding: 10px;"><img src="img/logos/Ragtag.png" alt="" width=250 style="padding: 10px;"><img src="img/logos/lav.png" alt="" width=350 style="padding: 10px; padding-top: 40px;">
             </div>
             </div>
         </div>

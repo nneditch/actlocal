@@ -58,11 +58,20 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
+        var involved = document.getElementById("involved").value;
+
+        if (involved === "partner") {
+		    document.getElementById('thankyou_partner').style.display = 'block';
+		}
+
+		if (involved === "leader") {
+		    document.getElementById('thankyou_leader').style.display = 'block';
+		}
+
+		if (involved === "volunteer") {
+		    document.getElementById('thankyou_volunteer').style.display = 'block';
+		}
         
-		document.getElementById('thankyou').style.display = 'block';
-		
-		var partnerorga = document.getElementById("organization").value;
-        $('#partnerorg').value(partnerorga);   
         return;
     };
     // url encode form data for sending as post data
